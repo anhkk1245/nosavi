@@ -1,3 +1,4 @@
+const { Decimal128 } = require('mongoose')
 const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({
@@ -22,7 +23,17 @@ const userSchema = new mongoose.Schema({
     cart: {
         type: Array,
         default: []
-    }
+    },
+    lat: {
+        type: Decimal128,
+    },
+    lon: {
+        type: Decimal128,
+    },
+    phone: {
+        type: String,
+        required: true
+    },
 }, {
     timestamps: true
 })
