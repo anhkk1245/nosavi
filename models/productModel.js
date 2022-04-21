@@ -53,10 +53,15 @@ const productSchema = new mongoose.Schema({
     },
     harvestedQuantity: {
         type: Number,
+        default: 0
     },
     harvestedTime: {
         type: Date,
     },
+    minRequiredQuantity: {
+        type: Number,
+        default: 0
+    }
 }, {
     timestamps: true //important
 })
