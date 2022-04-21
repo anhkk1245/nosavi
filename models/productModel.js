@@ -41,7 +41,22 @@ const productSchema = new mongoose.Schema({
     sold:{
         type: Number,
         default: 0
-    }
+    },
+    prepaymentRequired: {
+        type: Boolean,
+        required: true,
+        default: false,
+    },
+    unit: {
+        type: String,
+        required: true,
+    },
+    harvestedQuantity: {
+        type: Number,
+    },
+    harvestedTime: {
+        type: Date,
+    },
 }, {
     timestamps: true //important
 })
