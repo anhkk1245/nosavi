@@ -27,16 +27,12 @@ function OrderDetails() {
                     <tr>
                         <th>Tên</th>
                         <th>Địa chỉ</th>
-                        <th>Mã bưu chính</th>
-                        <th>Mã quốc gia</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>{orderDetails.address.recipient_name}</td>
                         <td>{orderDetails.address.line1 + " - " + orderDetails.address.city}</td>
-                        <td>{orderDetails.address.postal_code}</td>
-                        <td>{orderDetails.address.country_code}</td>
                     </tr>
                 </tbody>
             </table>

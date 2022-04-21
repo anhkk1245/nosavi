@@ -30,7 +30,7 @@ function DetailProduct() {
                     <div className="row">
                         <h4>{detailProduct.title}</h4>
                     </div>
-                    <span>$ {detailProduct.price}</span>
+                    <span>{detailProduct.price} VNĐ</span>
                     <p>{detailProduct.description}</p>
                     <p>{detailProduct.content}</p>
                     <p>Đã bán: {detailProduct.sold}</p>

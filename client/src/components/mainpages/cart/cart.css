@@ -30,3 +30,12 @@
 .total h3{
     color: crimson;
 }
+
+.total button {
+    background-color: #1890ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
