@@ -14,8 +14,6 @@ function Cart() {
     city: "",
   });
 
-  console.log({address})
-
   const onChangeInput = (e) => {
     const { name, value } = e.target;
     setAddress({ ...address, [name]: value });
